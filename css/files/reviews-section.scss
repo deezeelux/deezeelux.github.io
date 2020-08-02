@@ -1,0 +1,19 @@
+.reviews-section {
+    position: relative;
+    background: url("/img/icons/reviewsKlubnika.svg") right top 10% no-repeat;
+
+    &::before {
+        content: url("/img/icons/list7.svg");
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+    }
+
+    &::after {
+        content: url("/img/icons/reviewsKlubnika2.svg");
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+    }
+
+}

@@ -1,0 +1,19 @@
+.delivery-section {
+    background-image: url(/img/icons/deliv2.png);
+    background-size: 100%;
+    color: $darkgreen;
+
+    &::before {
+        content: url("/img/icons/jagoda3.svg");
+        position: absolute;
+        bottom: 710px;
+        left: 51px;
+    }
+
+    &::after {
+        content: url("/img/icons/list8.svg");
+        position: absolute;
+        left: 1200px;
+        bottom: 690px;
+    }
+}
