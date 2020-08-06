@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -11,8 +11,8 @@
 }
 
 .logo {
-    width: 53px;
-    height: 38px;
+    width: rem(53px);
+    height: rem(38px);
 }
 
 .hero__container {
@@ -20,4 +20,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+//увеличение значенния селектора с помощью двух классов
+.phone-number.header__phone-number {
+    @include tablet {
+        display: none;
+    }
 }

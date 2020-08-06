@@ -2,11 +2,11 @@
     text-align: center;
 }
 
-.headline__title {
-    margin-bottom: 25px;
-}
-
 .headline__sub {
     padding: 0 26%;
-    margin-bottom: 49px;
+    margin-bottom: rem(49px);
+
+    @include phone {
+        padding: 0 6%;
+    }
 }

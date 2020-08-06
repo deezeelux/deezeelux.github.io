@@ -1,10 +1,21 @@
+html {
+    font-size: $baseFontSize;
+
+    @include tablet {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phone {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
 html,
 body {
     height: 100%;
 }
 
 body {
-    font-size: $baseFontSize;
     font-family:"Alegreya Sans", Arial, Helvetica, sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -16,13 +27,14 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
+    min-width: $containerWidth + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    max-width: $containerWidth;
+    width: 95%;
     margin: 0 auto;
     position: relative;
 }
@@ -69,5 +81,5 @@ a {
 
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
 }

@@ -1,9 +1,16 @@
-$containerWidth: 940px;
+$containerWidth: rem(940px);
 $baseFontSize: 18px;
+
+//breakpoints
+$tablet: 768px;
+$phone: 480px;
 
 //color
 $blue: #61c4d9;
 $darkgreen: #0b4d3c;
+
+//media
+@import "files/media.scss";
 
 //normalize
 @import "http://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
@@ -16,6 +23,7 @@ $darkgreen: #0b4d3c;
 @import "files/hero";
 @import "files/header";
 @import "files/menu.scss";
+@import "files/hamburger.scss";
 @import "files/phone-num.scss";
 @import "files/features.scss";
 @import "files/feature.scss";
@@ -32,3 +40,6 @@ $darkgreen: #0b4d3c;
 @import "files/delivery-section.scss";
 @import "files/form.scss";
 @import "files/radio.scss";
+@import "files/map-section.scss";
+@import "files/footer.scss";
+@import "files/socials.scss";

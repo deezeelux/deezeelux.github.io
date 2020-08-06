@@ -1,11 +1,15 @@
 .benefit {
     text-align: center;
+
+    @include phone {
+        display: flex;
+    }
 }
 
 .benefit__img-wrapper {
     display: inline-block;
-    width: 128px;
-    height: 126px;
+    width: rem(128px);
+    height: rem(126px);
     position: relative;
     background: #f2f5f4;
     border-radius: 50%;
@@ -13,8 +17,8 @@
 }
 
 .benefit__icon {
-    width: 75px;
-    height: 69px;
+    width: rem(75px);
+    height: rem(69px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,8 +26,14 @@
 }
 
 .benefit__title {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     color: #000;
     font-weight: bold;
-    font-size: 27px;
+    font-size: rem(27px);
+}
+
+.benefit__img {
+    margin-bottom: rem(17px);
+    margin-right: rem(20px);
+
 }

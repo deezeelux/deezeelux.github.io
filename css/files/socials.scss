@@ -1,0 +1,30 @@
+.socials {
+    top: 50%;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: inline-block;
+    opacity: .3;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.socials__link:hover {
+    opacity: 1;
+    background: #000;
+}
+
+.socials__link-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+}

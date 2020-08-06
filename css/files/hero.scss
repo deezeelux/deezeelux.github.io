@@ -1,14 +1,24 @@
 .hero {
-    background:  url("/img/icons/list.png") right border-box no-repeat;
+    background:  url("/img/icons/list9.svg") right border-box no-repeat;
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #fff;
     position: relative;
 
+    @include tablet {
+        background-position: right bottom 88%;
+    }
+
+    &::before, &::after {
+        @include tablet {
+            display: none;
+        }
+    }
+
     &::before {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
         content: url("/img/icons/list3.svg");
     }
@@ -16,13 +26,35 @@
     &::after {
         content: url("/img/icons/nabor.svg");
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         right: 0;
     }
 }
 
 .hero__title-section {
     width: 45%;
+
+    @include tablet {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+            content: url(/img/icons/shok-jagod.png);
+            width: rem(315px);
+            margin-bottom: rem(15px);
+        }
+    }
+}
+
+.hero__icons-section {
+    @include tablet {
+        display: none;
+    }
 }
 
 .hero__container {
@@ -30,21 +62,33 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px;
-    background: url("/img/icons/batonchiki.png") right center / 50% auto no-repeat,
+    padding: rem(24px) 0 rem(45px);
+    background: url("/img/icons/baton\ 3.svg") right center / 50% auto no-repeat;
+
+    @include tablet {
+        background: none;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     text-transform: uppercase;
 }
 
 .hero__title-description {
-    font-style: 21px;
-    margin-bottom: 28px;
+    font-style: rem(21px);
+    margin-bottom: rem(28px);
     padding-right: 10%;
+
+    @include tablet {
+        padding: 0 29%;
+    }
+
+    @include phone {
+        padding: 0 18%;
+    }
 }
 

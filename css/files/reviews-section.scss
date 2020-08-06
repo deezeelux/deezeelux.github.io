@@ -5,14 +5,14 @@
     &::before {
         content: url("/img/icons/list7.svg");
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
     }
 
     &::after {
         content: url("/img/icons/reviewsKlubnika2.svg");
         position: absolute;
-        bottom: -25px;
+        bottom: rem(-25px);
         left: 0;
     }
 

@@ -1,5 +1,10 @@
 .benefits {
     display: flex;
+
+    @include phone {
+        flex-direction: column;
+        text-align: left;
+    }
 }
 
 .benefits__item {
@@ -7,12 +12,22 @@
     padding: 0 3%;
     position: relative;
 
+    @include phone {
+        display: none;
+        padding: 0;
+        margin-bottom: rem(17px);
+    }
+
     &::before {
         content: url("/img/icons/shariki.svg");
         position: absolute;
-        top: 30px;
+        top: rem(30px);
         right: 0;
         transform: translateX(50%);
+
+        @include phone {
+            display: none;
+        }
     }
 
     &:first-child {
