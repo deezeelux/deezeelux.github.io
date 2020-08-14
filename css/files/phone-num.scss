@@ -3,6 +3,14 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
 }
 
 .phone-number__icon {

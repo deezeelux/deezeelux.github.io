@@ -9,7 +9,7 @@
     &::before {
         content: url("/img/icons/granola.svg");
         position: absolute;
-        bottom: rem(-80px);
+        bottom: rem(-110px);
         left: 0;
 
         @include phone {

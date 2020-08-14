@@ -1,0 +1,131 @@
+.slider {
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.slider__box {
+    width: 100%;
+    padding-top: 4.1875rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.slider__list {
+    max-width: 51.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+    background-color: transparent;
+
+    @include tablet {
+        max-width: 36.3125rem;
+    }
+
+    @include phone {
+        max-width: 26.3125rem;
+    }
+}
+
+.slider__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: right;
+
+    @include tablet {
+        flex-direction: column;
+        min-width: 35.5rem;
+    }
+
+    @include phone {
+        flex-direction: column;
+        min-width: 26.25rem;
+    }
+}
+
+.slider__box-image {
+    margin-right: 5rem;
+    position: relative;
+
+    @include tablet {
+        margin-right: 0;
+    }
+}
+
+.slider__img {
+    display: block;
+}
+
+.slider__box-icon {
+    background: #87c4d8;
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+    border-radius: 4px;
+    margin-bottom: rem(20px);
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+        content: url(/img/icons/baton4.svg);
+        align-content: center;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.slider__icon-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider__title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    margin-bottom: 1.25rem;
+    padding: 0 30px 0 0;
+
+    @include tablet {
+        text-align: center;
+        font-size: 1.875rem;
+        width: 78%;
+    }
+
+    @include phone {
+        text-align: center;
+        font-size: 1.875rem;
+    }
+}
+
+.slider__footer {
+    @include tablet {
+        text-align: center;
+    }
+
+    @include phone {
+        text-align: center;
+    }
+}

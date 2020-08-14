@@ -21,10 +21,3 @@
     justify-content: space-between;
     height: 100%;
 }
-
-//увеличение значенния селектора с помощью двух классов
-.phone-number.header__phone-number {
-    @include tablet {
-        display: none;
-    }
-}

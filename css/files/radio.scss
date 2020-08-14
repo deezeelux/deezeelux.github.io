@@ -2,12 +2,10 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-top: rem(15px);
 
     &--checkbox {
         .radio__visible {
-            border-radius: 0; 
-            margin-bottom: rem(45px);  
+            border-radius: 0;  
             
             &::before {
                 background: url(/img/icons/galka.svg) center center no-repeat;
@@ -27,8 +25,8 @@
 }
 
 .radio__visible {
-    width: rem(25px);
-    height: rem(25px);
+    width: rem(24px);
+    height: rem(24px);
     position: relative;
     border-radius: 50%;
     background: #fff;

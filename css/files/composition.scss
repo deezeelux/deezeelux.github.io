@@ -1,0 +1,52 @@
+.composition__desc {
+    padding: 0px 90px 0 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+
+    @include tablet {
+        text-align: center;
+    }
+
+    @include phone {
+        text-align: center;
+    }
+}
+
+.composition__options {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+
+    @include tablet {
+        justify-content: center;
+    }
+
+    @include phone {
+        justify-content: center;
+    }
+}
+
+.composition__calories {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3.75rem;
+}
+
+.composition__amount {
+    font-weight: bold;
+    color: #000;
+}
+
+.composition__weight {
+    display: flex;
+    flex-direction: column;
+}
+
+.composition__price {
+    display: inline-block;
+    color: #000;
+    font-size: 3.75rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-right: 1.875rem;
+}

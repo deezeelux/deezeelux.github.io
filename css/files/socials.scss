@@ -19,12 +19,11 @@
     transition: .3s;
 }
 
-.socials__link:hover {
-    opacity: 1;
-    background: #000;
-}
-
 .socials__link-icon {
     width: 1.875rem;
     height: 1.875rem;
+}
+
+.socials__link-icon:hover {
+    fill: #8c1564;
 }

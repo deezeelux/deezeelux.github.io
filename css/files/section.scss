@@ -8,12 +8,12 @@
 
 .section__title {
     text-align: center;
-    font-style: rem(48px);
+    font-size: rem(48px);
     font-weight: bold;
     color: #000;
     text-transform: uppercase;
 
-    &.section--font--color--green {
+    &.section--color--green {
         color: $darkgreen;
     }
 }

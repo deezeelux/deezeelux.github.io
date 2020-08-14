@@ -1,4 +1,5 @@
 .btn {
+    display: inline-flex;
     font-style: rem(19px);
     font-weight: bold;
     padding: rem(18px) rem(35px);
@@ -7,6 +8,7 @@
     line-height: 1;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 
     &--white {
         background: #fff;
@@ -36,6 +38,11 @@
     &:hover{
       color: $darkgreen; 
     }
+}
+
+&--slider {
+  color: #fff;
+  background: #497870;
 }
 
 }

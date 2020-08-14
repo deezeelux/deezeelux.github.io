@@ -1,0 +1,17 @@
+.slider-section {
+    background-color: #f8faf9;
+
+    &::before {
+        content: url("/img/icons/list12.svg");
+        position: absolute;
+        top: rem(1998px);
+        right: 0;
+    }
+
+    &::after {
+        content: url("/img/icons/jagoda4.svg");
+        position: absolute;
+        right: 0;
+        top: rem(2160px);
+    }
+}

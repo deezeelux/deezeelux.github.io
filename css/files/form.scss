@@ -48,6 +48,7 @@
     &--textarea {
         height: rem(169px);
         resize: none;
+        margin-bottom: 20px;
     }
 
     &:focus {
@@ -59,10 +60,15 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 
     @include phone {
         justify-content: center;
     }
+}
+
+.last--control {
+    margin-bottom: 47px;
 }
 
 .form__btns {
