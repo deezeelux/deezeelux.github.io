@@ -158,10 +158,10 @@
                                     <img src="/img/icons/slid-baton1.png" alt="Батончик" class="slider__img">
                                 </div>
                                 <div class="slider__box-desc">
-                                    <div class="slider__box-icon" id="openOverlay">
-                                        <span class="slider__icon-title">Состав</span>
+                                    <div class="slider__box-icon js-open-modal" data-modal="constituent">
+                                        <span class="slider__icon-title js-modal-close">Состав</span>
                                     </div>
-                                    <ul class="slider__compositions">
+                                    <ul class="slider__compositions js-modal" data-modal="constituent">
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__item">
                                                 <use xlink:href="t"></use>
@@ -225,6 +225,7 @@
                                     </div>
                                 </div>
                             </li>
+                            <div class="overlay js-modal-overlay"></div>
                             <!--<li class="slider__item">
                                 <img src="/img/icons/right.png" alt="" class="slider__left">
                                 <img src="/img/icons/left.png" alt="" class="slider__right">
@@ -464,9 +465,10 @@
             </footer>
         </div>
     </div>
+    <script src="jquery-min.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/swipe.js"></script>
-    <script src="/js/button.js"></script>
+    <!--<script src="/js/swipe.js"></script>
+    <script src="/js/button.js"></script>-->
 </body>
 
 </html>
