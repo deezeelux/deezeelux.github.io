@@ -1,0 +1,53 @@
+.menu-composition {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    max-width: 16.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.3125rem;
+    border: solid 0.0625rem #efefef;
+    background-color: #fffffff1;
+    padding: 1.625rem 1.25rem 1.625rem 1.875rem;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+
+    @include tablet {
+        top: -120%;
+        left: 32%;
+    }
+
+    @include phone {
+        top: -120%;
+        left: 13%;
+    }
+}
+
+.menu-composition__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3.4375rem;
+    align-items: center;
+}
+
+.menu-composition__icon {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin-right: 1.5625rem;
+}
+
+.menu-composition__component {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #333333;
+}
+
+.menu-composition__weight {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #343333;
+}

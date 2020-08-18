@@ -148,11 +148,89 @@
             <section class="section slider-section">
                 <div class="container">
                     <div class="slider__box">
-                        <ul class="slider__list">
+                        <ul class="slider__list" id="sliderRoot">
                             <li class="slider__item">
+                                <img src="/img/icons/right.png" alt="" class="slider__left">
+                                <img src="/img/icons/left.png" alt="" class="slider__right">
                                 <div class="slider__box-image">
                                     <!--<img src="/img/icons/ellips1.svg" alt="" class="slider__img-first">
                                     <img src="/img/icons/ellips2.svg" alt="" class="slider__img-second">-->
+                                    <img src="/img/icons/slid-baton1.png" alt="Батончик" class="slider__img">
+                                </div>
+                                <div class="slider__box-desc">
+                                    <div class="slider__box-icon" id="openOverlay">
+                                        <span class="slider__icon-title">Состав</span>
+                                    </div>
+                                    <ul class="slider__compositions">
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__item">
+                                                <use xlink:href="t"></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Виноград</p>
+                                            <p class="menu-composition__weight">25 г</p>
+                                        </li>
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__icon">
+                                                <use xlink:href=""></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Грецкий орех</p>
+                                            <p class="menu-composition__weight">32 г</p>
+                                        </li>
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__icon">
+                                                <use xlink:href=""></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Кунжутное семя</p>
+                                            <p class="menu-composition__weight">20 г</p>
+                                        </li>
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__icon">
+                                                <use xlink:href=""></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Сухое молоко</p>
+                                            <p class="menu-composition__weight">10 г</p>
+                                        </li>
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__icon">
+                                                <use xlink:href=""></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Зам. сахара</p>
+                                            <p class="menu-composition__weight">4 г</p>
+                                        </li>
+                                        <li class="slider__compositions-item">
+                                            <svg class="menu-composition__icon">
+                                                <use xlink:href=""></use>
+                                            </svg>
+                                            <p class="menu-composition__component">Какао бобы</p>
+                                            <p class="menu-composition__weight">4 г</p>
+                                        </li>
+                                    </ul>
+                                    <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                                    <div class="composition">
+                                        <p class="composition__desc">Гранола из винограда, грецкого ореха и
+                                            кунжутных семечек.
+                                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                        <ul class="composition__options">
+                                            <li class="composition__calories">Калорийность
+                                                <span class="composition__amount">110 ккал</span>
+                                            </li>
+                                            <li class="composition__weight">Вес
+                                                <span class="composition__amount">95 грамм</span>
+                                            </li>
+                                        </ul>
+                                        <div class="slider__footer">
+                                            <p class="composition__price">140 ₽</p>
+                                            <button class="btn btn--slider" type="button">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--<li class="slider__item">
+                                <img src="/img/icons/right.png" alt="" class="slider__left">
+                                <img src="/img/icons/left.png" alt="" class="slider__right">
+                                <div class="slider__box-image">
+                                    <img src="/img/icons/ellips1.svg" alt="" class="slider__img-first">
+                                    <img src="/img/icons/ellips2.svg" alt="" class="slider__img-second">
                                     <img src="/img/icons/slid-baton1.png" alt="Батончик" class="slider__img">
                                 </div>
                                 <div class="slider__box-desc">
@@ -160,69 +238,69 @@
                                         <span class="slider__icon-title">Состав</span>
                                     </div>
                                     <ul class="slider__compositions">
-                                        <!--<li class="slider__compositions-item">
+                                        <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
+                                            <p class="menu-composition__component">Виноград</p>
                                             <p class="menu-composition__weight">25 г</p>
                                         </li>
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
-                                            <p class="menu-composition__weight">25 г</p>
+                                            <p class="menu-composition__component">Грецкий орех</p>
+                                            <p class="menu-composition__weight">32 г</p>
                                         </li>
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
-                                            <p class="menu-composition__weight">25 г</p>
+                                            <p class="menu-composition__component">Кунжутное семя</p>
+                                            <p class="menu-composition__weight">20 г</p>
                                         </li>
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
-                                            <p class="menu-composition__weight">25 г</p>
+                                            <p class="menu-composition__component">Сухое молоко</p>
+                                            <p class="menu-composition__weight">10 г</p>
                                         </li>
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
-                                            <p class="menu-composition__weight">25 г</p>
+                                            <p class="menu-composition__component">Зам. сахара</p>
+                                            <p class="menu-composition__weight">4 г</p>
                                         </li>
                                         <li class="slider__compositions-item">
                                             <svg class="menu-composition__icon">
                                                 <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
                                             </svg>
-                                            <p class="menu-composition__component">Овёс</p>
-                                            <p class="menu-composition__weight">25 г</p>
-                                        </li>-->
+                                            <p class="menu-composition__component">Какао бобы</p>
+                                            <p class="menu-composition__weight">4 г</p>
+                                        </li>
                                     </ul>
-                                        <h3 class="slider__title">Батончик “Гранола виноград”</h3>
-                                        <div class="composition">
-                                            <p class="composition__desc">Гранола из винограда, грецкого ореха и
-                                                кунжутных семечек.
-                                                В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                                            <ul class="composition__options">
-                                                <li class="composition__calories">Калорийность
-                                                    <span class="composition__amount">110 ккал</span>
-                                                </li>
-                                                <li class="composition__weight">Вес
-                                                    <span class="composition__amount">95 грамм</span>
-                                                </li>
-                                            </ul>
-                                            <div class="slider__footer">
-                                                <p class="composition__price">140 ₽</p>
+                                    <h3 class="slider__title">Батончик “Гранола виноград”</h3>
+                                    <div class="composition">
+                                        <p class="composition__desc">Гранола из винограда, грецкого ореха и
+                                            кунжутных семечек.
+                                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                        <ul class="composition__options">
+                                            <li class="composition__calories">Калорийность
+                                                <span class="composition__amount">110 ккал</span>
+                                            </li>
+                                            <li class="composition__weight">Вес
+                                                <span class="composition__amount">95 грамм</span>
+                                            </li>
+                                        </ul>
+                                        <div class="slider__footer">
+                                            <p class="composition__price">140 ₽</p>
                                             <button class="btn btn--slider" type="button">Заказать</button>
-                                            </div>
                                         </div>
+                                    </div>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -386,11 +464,9 @@
             </footer>
         </div>
     </div>
-
-
-
-
-
+    <script src="/js/main.js"></script>
+    <script src="/js/swipe.js"></script>
+    <script src="/js/button.js"></script>
 </body>
 
 </html>
