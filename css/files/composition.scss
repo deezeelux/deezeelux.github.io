@@ -1,14 +1,16 @@
 .composition__desc {
-    padding: 0px 90px 0 0;
+    padding: 0px 60px 0 0;
     margin-bottom: 24px;
     font-size: 18px;
 
     @include tablet {
         text-align: center;
+        padding: 0 40px 0;
     }
 
     @include phone {
         text-align: center;
+        padding: 0 23px;
     }
 }
 
@@ -19,10 +21,12 @@
 
     @include tablet {
         justify-content: center;
+        margin-bottom: 15px;
     }
 
     @include phone {
         justify-content: center;
+        margin-bottom: 5px;
     }
 }
 

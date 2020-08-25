@@ -6,6 +6,14 @@
         position: absolute;
         top: rem(1998px);
         right: 0;
+
+        @include tablet {
+            top: rem(1850px);
+        }
+
+        @include phone {
+            top: rem(2100px);
+        }
     }
 
     &::after {
@@ -13,5 +21,13 @@
         position: absolute;
         right: 0;
         top: rem(2160px);
+
+        @include tablet {
+            top: rem(2080px);
+        }
+
+        @include phone {
+            display: none;
+        }
     }
 }

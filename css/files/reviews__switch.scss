@@ -3,3 +3,14 @@
     justify-content: center;
     align-items: center;
 }
+
+.reviews__switch-item {
+
+    &:hover {
+        border-color: #365A49;
+    }
+
+    &.active {
+        border-color: #365A49;
+    }
+}

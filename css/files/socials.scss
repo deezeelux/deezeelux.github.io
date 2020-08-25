@@ -1,11 +1,10 @@
 .socials {
-    top: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .socials__item {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5%;
+    margin-right: rem(10px);
 }
 
 .socials__item:last-child {
@@ -20,10 +19,12 @@
 }
 
 .socials__link-icon {
-    width: 1.875rem;
-    height: 1.875rem;
-}
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    opacity: 0.4;
 
-.socials__link-icon:hover {
-    fill: #8c1564;
+    &:hover {
+        opacity: 1;
+    }
 }

@@ -41,14 +41,13 @@
 
 .form__input {
     width: 100%;
-    padding: rem(18px) rem(11px);
+    padding: rem(6px);
     border-radius: rem(4px);
     border: solid rem(3px) transparent;
 
     &--textarea {
         height: rem(169px);
         resize: none;
-        margin-bottom: 20px;
     }
 
     &:focus {
@@ -64,11 +63,20 @@
 
     @include phone {
         justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    @include tablet {
+        margin-bottom: 10px;
     }
 }
 
 .last--control {
     margin-bottom: 47px;
+
+    @include tablet {
+        margin-bottom: 10px;
+    }
 }
 
 .form__btns {

@@ -20,6 +20,17 @@
 
 }
 
+.reviews__disp-item {
+    position: absolute;
+    opacity: 0;
+
+    &.active {
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
+    }
+}
+
 .reviews__disp-inner {
     display: flex;
 
@@ -35,8 +46,9 @@
     height: rem(260px);
 
     @include tablet {
-    width: rem(130px);
-    height: rem(130px);
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: 10px;
     }
 }
 
@@ -55,15 +67,20 @@
         position: absolute;
         top: 20x;
         right: 0;
-        
+
         @include phone {
             top: rem(30px);
+            margin-left: 0;
+        }
+
+        @include tablet {
+            top: 30px;
         }
     }
 }
 
 .reviews__title {
-    margin-bottom: rem(18px);
+    margin-bottom: rem(15px);
     font-size: rem(27px);
     font-weight: bold;
     color: #000;
@@ -72,6 +89,14 @@
 .reviews__text {
     margin-bottom: rem(30px);
     padding: 0 22% 0 0;
+
+    @include phone {
+        padding: 0;
+    }
+
+    @include tablet {
+        padding: 0 13px 0 0;
+    }
 }
 
 .reviews__autor {

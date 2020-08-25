@@ -43,7 +43,7 @@
 
         &::before {
             content: url(/img/icons/shok-jagod.png);
-            width: rem(315px);
+            width: 100%;
             margin-bottom: rem(15px);
         }
     }
@@ -74,6 +74,14 @@
     font-weight: bold;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+
+    @include phone {
+        font-size: 33px;
+    }
+
+    @include tablet {
+        font-size: 33px;
+    }
 }
 
 .hero__title-description {

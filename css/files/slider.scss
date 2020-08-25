@@ -11,6 +11,12 @@
     justify-content: center;
     position: relative;
     background-color: transparent;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 }
 
 .slider__list {
@@ -48,17 +54,32 @@
     }
 }
 
+.slider__box-desc {
+    flex: 1.2;
+}
+
 .slider__box-image {
     margin-right: 5rem;
     position: relative;
 
     @include tablet {
         margin-right: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .slider__img {
     display: block;
+
+    @include tablet {
+        max-width: 90%;
+    }
+
+    @include phone {
+        max-width: 85%;
+    }
 }
 
 .slider__box-icon {
@@ -105,17 +126,18 @@
     text-transform: uppercase;
     color: #0d0d0d;
     margin-bottom: 1.25rem;
-    padding: 0 30px 0 0;
+    padding: 0;
 
     @include tablet {
         text-align: center;
         font-size: 1.875rem;
-        width: 78%;
+        width: 100%;
+        padding: 0;
     }
 
     @include phone {
         text-align: center;
-        font-size: 1.875rem;
+        font-size: 26px;
     }
 }
 
@@ -134,6 +156,15 @@
     transform: rotate(180deg);
     top: 50%;
     cursor: pointer;
+
+    @include tablet {
+        left: 80px;
+        top: 25%;
+    }
+
+    @include phone {
+        left: 40px;
+    }
 }
 
 .slider__right {
@@ -142,15 +173,60 @@
     transform: rotate(180deg);
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 0;
     cursor: pointer;
+
+    @include tablet {
+        top: 25%;
+        right: 70px;
+    }
+
+    @include phone {
+        right: 20px;
+    }
 }
 
 .slider__compositions {
     display: none;
+    background: #B3B3B3;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(40px);
+    border-radius: 4px;
+    width: 365px;
+
 }
 
-.modal.is-show,
+.slider__compositions-item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.menu-composition__component {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.modal.is-show,
 .overlay.is-show {
     display: block;
 }
@@ -176,4 +252,4 @@
     background-color: rgba(0, 0, 0, .3); 
     z-index: 10;
     display: none;
-}
+}*/

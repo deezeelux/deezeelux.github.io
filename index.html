@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chocco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -142,69 +143,55 @@
                     </ul>
                 </div>
             </section>
-
-
-
             <section class="section slider-section">
                 <div class="container">
                     <div class="slider__box">
-                        <ul class="slider__list" id="sliderRoot">
+                        <ul class="slider__list">
+                            <img src="/img/icons/right.png" alt="" class="slider__left">
+                            <img src="/img/icons/left.png" alt="" class="slider__right">
                             <li class="slider__item">
-                                <img src="/img/icons/right.png" alt="" class="slider__left">
-                                <img src="/img/icons/left.png" alt="" class="slider__right">
+                                <!--Здесь были раньше стрелочки-->
                                 <div class="slider__box-image">
-                                    <!--<img src="/img/icons/ellips1.svg" alt="" class="slider__img-first">
-                                    <img src="/img/icons/ellips2.svg" alt="" class="slider__img-second">-->
-                                    <img src="/img/icons/slid-baton1.png" alt="Батончик" class="slider__img">
+                                    <img src="/img/icons/slid-baton3.png" alt="Батончик" class="slider__img">
                                 </div>
                                 <div class="slider__box-desc">
-                                    <div class="slider__box-icon js-open-modal" data-modal="constituent">
-                                        <span class="slider__icon-title js-modal-close">Состав</span>
+                                    <div class="slider__dropdown">
+                                        <div class="slider__box-icon">
+                                            <span class="slider__icon-title js-modal-close">Состав</span>
+                                        </div>
+                                        <ul class="slider__compositions">
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Виноград</p>
+                                                <p class="menu-composition__weight">25 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Грецкий орех</p>
+                                                <p class="menu-composition__weight">32 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Кунжутное семя</p>
+                                                <p class="menu-composition__weight">20 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Сухое молоко</p>
+                                                <p class="menu-composition__weight">10 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Зам. сахара</p>
+                                                <p class="menu-composition__weight">4 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Какао бобы</p>
+                                                <p class="menu-composition__weight">4 г</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="slider__compositions js-modal" data-modal="constituent">
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__item">
-                                                <use xlink:href="t"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Виноград</p>
-                                            <p class="menu-composition__weight">25 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href=""></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Грецкий орех</p>
-                                            <p class="menu-composition__weight">32 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href=""></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Кунжутное семя</p>
-                                            <p class="menu-composition__weight">20 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href=""></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Сухое молоко</p>
-                                            <p class="menu-composition__weight">10 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href=""></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Зам. сахара</p>
-                                            <p class="menu-composition__weight">4 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href=""></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Какао бобы</p>
-                                            <p class="menu-composition__weight">4 г</p>
-                                        </li>
-                                    </ul>
                                     <h3 class="slider__title">Батончик “Гранола виноград”</h3>
                                     <div class="composition">
                                         <p class="composition__desc">Гранола из винограда, грецкого ореха и
@@ -225,63 +212,48 @@
                                     </div>
                                 </div>
                             </li>
-                            <div class="overlay js-modal-overlay"></div>
-                            <!--<li class="slider__item">
-                                <img src="/img/icons/right.png" alt="" class="slider__left">
-                                <img src="/img/icons/left.png" alt="" class="slider__right">
+                            <li class="slider__item">
                                 <div class="slider__box-image">
-                                    <img src="/img/icons/ellips1.svg" alt="" class="slider__img-first">
-                                    <img src="/img/icons/ellips2.svg" alt="" class="slider__img-second">
-                                    <img src="/img/icons/slid-baton1.png" alt="Батончик" class="slider__img">
+                                    <img src="/img/icons/slid-baton3.png" alt="Батончик" class="slider__img">
                                 </div>
                                 <div class="slider__box-desc">
-                                    <div class="slider__box-icon">
-                                        <span class="slider__icon-title">Состав</span>
+                                    <div class="slider__dropdown">
+                                        <div class="slider__box-icon">
+                                            <span class="slider__icon-title js-modal-close">Состав</span>
+                                        </div>
+                                        <ul class="slider__compositions">
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Виноград</p>
+                                                <p class="menu-composition__weight">25 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Грецкий орех</p>
+                                                <p class="menu-composition__weight">32 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Кунжутное семя</p>
+                                                <p class="menu-composition__weight">20 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Сухое молоко</p>
+                                                <p class="menu-composition__weight">10 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Зам. сахара</p>
+                                                <p class="menu-composition__weight">4 г</p>
+                                            </li>
+                                            <li class="slider__compositions-item">
+
+                                                <p class="menu-composition__component">Какао бобы</p>
+                                                <p class="menu-composition__weight">4 г</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="slider__compositions">
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Виноград</p>
-                                            <p class="menu-composition__weight">25 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Грецкий орех</p>
-                                            <p class="menu-composition__weight">32 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Кунжутное семя</p>
-                                            <p class="menu-composition__weight">20 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Сухое молоко</p>
-                                            <p class="menu-composition__weight">10 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Зам. сахара</p>
-                                            <p class="menu-composition__weight">4 г</p>
-                                        </li>
-                                        <li class="slider__compositions-item">
-                                            <svg class="menu-composition__icon">
-                                                <use xlink:href="/icons/bar/sprite-bar-1.svg#bar-1"></use>
-                                            </svg>
-                                            <p class="menu-composition__component">Какао бобы</p>
-                                            <p class="menu-composition__weight">4 г</p>
-                                        </li>
-                                    </ul>
                                     <h3 class="slider__title">Батончик “Гранола виноград”</h3>
                                     <div class="composition">
                                         <p class="composition__desc">Гранола из винограда, грецкого ореха и
@@ -301,48 +273,219 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>-->
+                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
-
-            <section class="section reviews-section">
+            <section class="section team-section">
                 <div class="container">
+                    <div class="section__title">Команда</div>
+                    <!--desktop-->
+                    <ul class="team__list team--version--desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team1.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Главный технолог</h2>
+                                    <p class="team__desc">Отвечает за вкусовые качества и калорийность.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team2.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Специалист по упаковке</h2>
+                                    <p class="team__desc">Автор запоминающегося стиля
+                                        наших батончиков.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team3.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Оператор</h2>
+                                    <p class="team__desc">С радостью поможет подобрать батончики и оформить заказ.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team4.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Мила Рыжова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">PR,маркетинг</h2>
+                                    <p class="team__desc">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--mobile-->
+                    <ul class="team__list team--version--mobile">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team1.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Главный технолог</h2>
+                                    <p class="team__desc">Отвечает за вкусовые качества и калорийность.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team2.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Специалист по упаковке</h2>
+                                    <p class="team__desc">Автор запоминающегося стиля
+                                        наших батончиков.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team3.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">Оператор</h2>
+                                    <p class="team__desc">С радостью поможет подобрать батончики и оформить заказ.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="/img/icons/team4.png" alt="first" class="team__member-image">
+                            </div>
+                            <button class="team__title" type="button">Мила Рыжова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <h2 class="team__post">PR,маркетинг</h2>
+                                    <p class="team__desc">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section reviews-section">
+                <div class="container reviews-section-container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
                         <div class="reviews__disp">
-                            <div class="reviews__disp-inner">
-                                <div class="reviews__avatar">
-                                    <img src="/img/reviews/photo1.jpg" alt="first girl" class="reviews__avatar-img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Лучший перекус</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В
-                                            течение дня сижу за компьютером и часто отходить в кафе или на кухню просто
-                                            не могу себе позволить. А батончик – он всегда под рукой. Это приятно и
-                                            удобно.
-                                        </p>
+                            <ul class="reviews__disp-list">
+                                <li class="reviews__disp-item active" data-linked-with="one">
+                                    <div class="reviews__disp-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="/img/reviews/photo1.jpg" alt="first girl"
+                                                class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <div class="reviews__container">
+                                                <h3 class="reviews__title">Лучший перекус</h3>
+                                                <div class="reviews__text">
+                                                    <p>
+                                                        Я ем малыми порциями, но часто. Это повышает мою продуктивность
+                                                        в разы.
+                                                        В
+                                                        течение дня сижу за компьютером и часто отходить в кафе или на
+                                                        кухню
+                                                        просто
+                                                        не могу себе позволить. А батончик – он всегда под рукой. Это
+                                                        приятно и
+                                                        удобно.
+                                                    </p>
+                                                </div>
+                                                <div class="reviews__autor">Алёна Хмельницкая</div>
+                                            </div>
+                                        </article>
                                     </div>
-                                    <div class="reviews__autor">Алёна Хмельницкая</div>
-                                </article>
-                            </div>
+                                </li>
+                                <li class="reviews__disp-item" data-linked-with="two">
+                                    <div class="reviews__disp-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="/img/reviews/photo2.jpg" alt="boy" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <div class="reviews__container">
+                                                <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                                                <div class="reviews__text">
+                                                    <p>
+                                                        После тренировок всегда хочется быстро закинуться чем-то
+                                                        белковым, потому что до дома ещё нужно доехать. А кушать
+                                                        хочется. Протеиновые батончики всегда выручают в этом плане.
+                                                        Спасибо производителю за этот качественный и экологичный
+                                                        продукт.
+                                                    </p>
+                                                </div>
+                                                <div class="reviews__autor">Вадим Грачев</div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </li>
+                                <li class="reviews__disp-item" data-linked-with="three">
+                                    <div class="reviews__disp-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="/img/reviews/photo3.jpg" alt="second girl"
+                                                class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <div class="reviews__container">
+                                                <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                                                <div class="reviews__text">
+                                                    <p>
+                                                        Батончики понравились. На мой взгляд слегка завышена цена по
+                                                        сравнению с конкурентами, однако, как говорится – оно того
+                                                        стоит. Нравится носить с собой, нравится держать в руке. Ну и
+                                                        конечно же, кушать. Идеально утоляют голод, хоть и не надолго.
+                                                        Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                                                    </p>
+                                                </div>
+                                                <div class="reviews__autor">Мария Орлова</div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <ul class="reviews__switch">
-                            <li class="reviews__switch-item interact-avatar interact-avatar--active">
-                                <a href="#" class="interact-avatar__link">
+                            <li class="reviews__switch-item active interact-avatar">
+                                <a href="#" class="interact-avatar__link" data-open="one">
                                     <img src="/img/reviews/photo1.jpg" alt="first girl" class="interact-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switch-item interact-avatar">
-                                <a href="#" class="interact-avatar__link">
+                                <a href="#" class="interact-avatar__link" data-open="two">
                                     <img src="/img/reviews/photo3.jpg" alt="second girl" class="interact-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switch-item interact-avatar">
-                                <a href="#" class="interact-avatar__link">
+                                <a href="#" class="interact-avatar__link" data-open="three">
                                     <img src="/img/reviews/photo2.jpg" alt="boy" class="interact-avatar__img">
                                 </a>
                             </li>
@@ -424,51 +567,54 @@
                     </form>
                 </div>
             </section>
-            <section id="map" class="section map-section ">
-
+            <section class="section map-section ">
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="footer__contacts">
+                            <div class="footer__address">Москва, ул. Новый Арбат, д.31/12</div>
+                            <a class="footer__phone" href="tel:+78009039090">8 800 903 90 90</a>
+                        </div>
+                        <div class="footer__socials">
+                            <ul class="socials">
+                                <li class="socials__item"><a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" viewbox="0 0 20 20">
+                                            <use xlink:href="./sprite.svg#vk4"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item"><a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" viewbox="0 0 36.7 36.7">
+                                            <use xlink:href="./sprite.svg#f4"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item"><a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" viewbox="0 0 20 20">
+                                            <use xlink:href="./sprite.svg#inst4"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item"><a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" viewbox="0 0 20 20">
+                                            <use xlink:href="./sprite.svg#tv4"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
             </section>
-            <footer class="footer">
-                <div class="container footer__container">
-                    <div class="footer__contacts">
-                        <div class="footer__address">Москва, ул. Новый Арбат, д.31/12</div>
-                        <a class="footer__phone" href="tel:+78009039090">8 800 903 90 90</a>
-                    </div>
-                    <div class="footer__socials">
-                        <ul class="socials">
-                            <li class="socials__item"><a class="socials__link" href="#">
-                                    <svg class="socials__link-icon" viewbox="0 0 20 20">
-                                        <use xlink:href="./sprite.svg#vk4"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item"><a class="socials__link" href="#">
-                                    <svg class="socials__link-icon" viewbox="0 0 36.7 36.7">
-                                        <use xlink:href="./sprite.svg#f4"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item"><a class="socials__link" href="#">
-                                    <svg class="socials__link-icon" viewbox="0 0 20 20">
-                                        <use xlink:href="./sprite.svg#inst4"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item"><a class="socials__link" href="#">
-                                    <svg class="socials__link-icon" viewbox="0 0 20 20">
-                                        <use xlink:href="./sprite.svg#tv4"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
-    <script src="jquery-min.js"></script>
-    <script src="/js/main.js"></script>
-    <!--<script src="/js/swipe.js"></script>
-    <script src="/js/button.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/team.js"></script>
+    <script src="/js/reviews-tabs.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,9 @@
 .footer {
-    /*position: absolute;*/
+    position: absolute;
     padding: 2% 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
 }
 
 .footer__container {
@@ -18,7 +21,6 @@
 }
 
 .footer__contacts {
-    width: 50%;
 
     @include phone {
         margin-bottom: 10px;
@@ -29,7 +31,6 @@
 }
 
 .footer__socials {
-    width: 50%;
 
     @include phone {
         margin-bottom: 10px;
