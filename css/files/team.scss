@@ -53,16 +53,17 @@
 
     @include tablet {
         margin-right: 0;
+        margin-bottom: 15px;
     }
 
     @include phone {
         margin-right: 0;
+
     }
 }
 
 .team__member {
     margin-bottom: 20px;
-    height: 288px;
 }
 
 .team__title {
@@ -89,6 +90,7 @@
 
 .team__content-block {
     padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .team__post {

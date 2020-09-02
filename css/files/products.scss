@@ -25,7 +25,25 @@
     position: relative;
     width: 100px;
     text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
+
+.products-menu__image {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.products-menu__text {
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    width: 100%;
+    font-size: 48px;
+} 
 
 .products-menu__content {
     background: rgba(47, 50, 52, 0.9);
@@ -37,6 +55,7 @@
 
 .products-menu__container {
     padding: 40px 73px 45px 26px;
+    min-width: 500px;
 }
 
 .products-menu__close {

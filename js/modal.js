@@ -51,6 +51,10 @@ $('.form').submit(e => {
         //done это аналог success (не/успешный ответ)
         request.done(data => {
             content.text(data.message);
+
+            //очистка формы после успешной отправки
+            $("#results").html(data);
+            $('form')[0].reset();
         });
 
         //fail это аналог success (не/успешный ответ)
@@ -58,6 +62,9 @@ $('.form').submit(e => {
             const message = data.responseJSON.message;
             content.text(message);
             modal.addClass("error_modal");
+
+            $("#results").html(data);
+            $('form')[0].reset();
         });
 
         //общий код-вызов модалки

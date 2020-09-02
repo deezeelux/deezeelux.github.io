@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section hero-section">
+            <section class="section hero-section" data-scroll-to="0">
                 <div class="promo__hidden-menu">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -26,7 +26,7 @@
                             <li class="nav__item-hidden"><a href="#">Контакты</a></li>
                         </ul>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img
-                            src="/img/icons/close1.svg" alt=""></a>
+                                src="/img/icons/close1.svg" alt=""></a>
                     </nav>
                 </div>
                 <div class="container hero__container">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section class="section benefits-section" data-scroll-to="1">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -157,10 +157,10 @@
                     </ul>
                 </div>
             </section>
-            <section class="section slider-section">
+            <section class="section slider-section" data-scroll-to="2">
                 <div class="container">
                     <img src="/img/icons/right.png" alt="" class="slider__left">
-                            <img src="/img/icons/left.png" alt="" class="slider__right">
+                    <img src="/img/icons/left.png" alt="" class="slider__right">
                     <div class="slider__box">
                         <ul class="slider__list">
                             <li class="slider__item">
@@ -174,32 +174,33 @@
                                         </div>
                                         <ul class="slider__compositions">
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/grape.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Виноград</p>
                                                 <p class="menu-composition__weight">25 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/nut.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Грецкий орех</p>
                                                 <p class="menu-composition__weight">32 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/kunzchut.svg" alt=""
+                                                    class="slider__compositions-img">
                                                 <p class="menu-composition__component">Кунжутное семя</p>
                                                 <p class="menu-composition__weight">20 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/milk.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Сухое молоко</p>
                                                 <p class="menu-composition__weight">10 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/sugar.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Зам. сахара</p>
                                                 <p class="menu-composition__weight">4 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/kakao.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Какао бобы</p>
                                                 <p class="menu-composition__weight">4 г</p>
                                             </li>
@@ -236,32 +237,33 @@
                                         </div>
                                         <ul class="slider__compositions">
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/grape.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Виноград</p>
                                                 <p class="menu-composition__weight">25 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/nut.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Грецкий орех</p>
                                                 <p class="menu-composition__weight">32 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/kunzchut.svg" alt=""
+                                                    class="slider__compositions-img">
                                                 <p class="menu-composition__component">Кунжутное семя</p>
                                                 <p class="menu-composition__weight">20 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/milk.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Сухое молоко</p>
                                                 <p class="menu-composition__weight">10 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/sugar.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Зам. сахара</p>
                                                 <p class="menu-composition__weight">4 г</p>
                                             </li>
                                             <li class="slider__compositions-item">
- 
+                                                <img src="/img/icons/kakao.svg" alt="" class="slider__compositions-img">
                                                 <p class="menu-composition__component">Какао бобы</p>
                                                 <p class="menu-composition__weight">4 г</p>
                                             </li>
@@ -291,7 +293,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section class="section team-section" data-scroll-to="3">
                 <div class="container">
                     <div class="section__title team-title">Команда</div>
                     <!--desktop-->
@@ -354,10 +356,10 @@
                         <li class="team__item">
                             <button class="team__title" type="button">Борис Федорович</button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="/img/icons/team1.png" alt="first" class="team__member-image">
-                                </div>
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="/img/icons/team1.png" alt="first" class="team__member-image">
+                                    </div>
                                     <h2 class="team__post">Главный технолог</h2>
                                     <p class="team__desc">Отвечает за вкусовые качества и калорийность.</p>
                                 </div>
@@ -366,10 +368,10 @@
                         <li class="team__item">
                             <button class="team__title" type="button">Алла Иванова</button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="/img/icons/team2.png" alt="first" class="team__member-image">
-                                </div>
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="/img/icons/team2.png" alt="first" class="team__member-image">
+                                    </div>
                                     <h2 class="team__post">Специалист по упаковке</h2>
                                     <p class="team__desc">Автор запоминающегося стиля
                                         наших батончиков.
@@ -380,10 +382,10 @@
                         <li class="team__item">
                             <button class="team__title" type="button">Кирилл Матросов</button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="/img/icons/team3.png" alt="first" class="team__member-image">
-                                </div>
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="/img/icons/team3.png" alt="first" class="team__member-image">
+                                    </div>
                                     <h2 class="team__post">Оператор</h2>
                                     <p class="team__desc">С радостью поможет подобрать батончики и оформить заказ.</p>
                                 </div>
@@ -392,10 +394,10 @@
                         <li class="team__item">
                             <button class="team__title" type="button">Мила Рыжова</button>
                             <div class="team__content">
-                                <div class="team__member">
-                                    <img src="/img/icons/team4.png" alt="first" class="team__member-image">
-                                </div>
                                 <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="/img/icons/team4.png" alt="first" class="team__member-image">
+                                    </div>
                                     <h2 class="team__post">PR,маркетинг</h2>
                                     <p class="team__desc">По всем вопросам сотрудничества
                                         и рекламы писать только Миле.
@@ -406,7 +408,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-menu-section">
+            <section class="section products-menu-section" data-scroll-to="4">
                 <h1 class="section__title products-menu-section__title">Меню</h1>
                 <ul class="products-menu">
                     <li class="products-menu__item">
@@ -467,7 +469,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section reviews-section">
+            <section class="section reviews-section" data-scroll-to="5">
                 <div class="container reviews-section-container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -555,19 +557,19 @@
                             </li>
                             <li class="reviews__switch-item interact-avatar">
                                 <a href="#" class="interact-avatar__link" data-open="two">
-                                    <img src="/img/reviews/photo3.jpg" alt="second girl" class="interact-avatar__img">
+                                    <img src="/img/reviews/photo2.jpg" alt="second girl" class="interact-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switch-item interact-avatar">
                                 <a href="#" class="interact-avatar__link" data-open="three">
-                                    <img src="/img/reviews/photo2.jpg" alt="boy" class="interact-avatar__img">
+                                    <img src="/img/reviews/photo3.jpg" alt="boy" class="interact-avatar__img">
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section player-section">
+            <section class="section player-section" data-scroll-to="6">
                 <div class="container">
                     <h2 class="section__title youtube-title">Как мы работаем</h2>
                     <div class="player-section__container">
@@ -590,7 +592,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section delivery-section ">
+            <section class="section delivery-section" data-scroll-to="7">
                 <div class="container">
                     <h2 class="section__title section--color--green">Закажите доставку</h2>
                     <form class="form">
@@ -658,7 +660,7 @@
                                 </label>
                             </div>
                             <div class="form__btns">
-                                <input type="submit" value="Заказать" class="btn btn--green">
+                                <input type="submit" value="Заказать" id="results" class="btn btn--green">
                                 <input type="reset" value="Очистить" class="btn btn--transparent">
                             </div>
                         </div>
@@ -674,7 +676,7 @@
                     </div>
                 </div>
             </div>
-            <section class="section map-section ">
+            <section class="section map-section " data-scroll-to="8">
                 <div id="map" style="width: 100%; height: 100%"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -718,55 +720,48 @@
     <nav class="fixed-menu fixed-menu--shadowed">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="" class="fixed-menu__link" data-scroll-to="0">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="0">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="1">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="1">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="2">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="2">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="3">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="3">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="4">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="4">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="5">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="5">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="6">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="6">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="7">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="7">                    
                 </a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="8">
-                    <div class="fixed-menu__item-wrap"></div>
+                <a href="" class="fixed-menu__link" data-scroll-to="8">                    
                 </a>
             </li>
         </ul>
     </nav>
- 
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/slider.js"></script>
@@ -780,6 +775,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="./js/map.js"></script>
     <script src="./js/ops.js"></script>
+    <script src="js/fixed-menu.js"></script>
+
 </body>
 
 </html>

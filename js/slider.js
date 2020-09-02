@@ -1,6 +1,7 @@
 const slider = $('.slider__list').bxSlider({
     pager: false,
-    controls: false
+    controls: false,
+    infiniteLoop: false,
 });
 
 $('.slider__left').click(e => {

@@ -25,3 +25,16 @@
         transform: translate(-50%, -50%);
     }
 }
+
+a.fixed-menu__link {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 12px;
+
+    &:hover {
+        border: 1px solid #fff;
+    }
+}

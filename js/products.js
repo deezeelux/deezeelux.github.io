@@ -14,7 +14,7 @@ const openItem1 = item => {
     const hiddenContent = item.find(".products-menu__content");
     const reqWidth = mesureWidth();
 
-    itemm.addClass("active");
+    item.addClass("active");
     hiddenContent.width(reqWidth);
 }
 
@@ -33,7 +33,6 @@ $(".products-menu__title").on("click", e => {
         openItem1(item);
     }
 
-    openItem1(item);
 });
 
 $(".products-menu__close").on("click", e => {

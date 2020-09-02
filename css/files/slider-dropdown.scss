@@ -1,5 +1,11 @@
 .slider__dropdown {
     display: flex;
+
+    &:hover {
+        position: absolute;
+        width: 310px;
+        height: 330px;
+    }
 }
 
 .slider__dropdown:hover .slider__compositions {
