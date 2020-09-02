@@ -1,33 +1,37 @@
 .btn {
-    display: inline-flex;
-    font-style: rem(19px);
-    font-weight: bold;
-    padding: rem(18px) rem(35px);
-    text-transform: uppercase;
-    border-radius: rem(100px);
-    line-height: 1;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
+  display: inline-flex;
+  font-style: rem(19px);
+  font-weight: bold;
+  padding: rem(18px) rem(35px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 
-    &--white {
-        background: #fff;
-        color: $darkgreen;
+  &:focus {
+    outline: none;
+  }
 
-        &:hover{
-          color: #fff;
-          background: $darkgreen;  
-        }
-    }
+  &--white {
+    background: #fff;
+    color: $darkgreen;
 
-    &--green {
-      background: $darkgreen;
+    &:hover {
       color: #fff;
+      background: $darkgreen;
+    }
+  }
 
-      &:hover{
-        color: $darkgreen;
-        background: #fff;  
-      }
+  &--green {
+    background: $darkgreen;
+    color: #fff;
+
+    &:hover {
+      color: $darkgreen;
+      background: #fff;
+    }
   }
 
   &--transparent {
@@ -35,14 +39,14 @@
     color: #000;
     text-transform: none;
 
-    &:hover{
-      color: $darkgreen; 
+    &:hover {
+      color: $darkgreen;
     }
-}
+  }
 
-&--slider {
-  color: #fff;
-  background: #497870;
-}
+  &--slider {
+    color: #fff;
+    background: #497870;
+  }
 
 }

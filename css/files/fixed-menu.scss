@@ -1,0 +1,27 @@
+.fixed-menu {
+    position: fixed;
+    top: 20%;
+    right: 3%;
+    z-index: 100;
+    color: #fff;
+}
+
+.fixed-menu--shadowed {
+    color: #000;
+}
+
+.fixed-menu__link {
+
+    &::before {
+        content: "";
+        display: block;
+        width: 0.3333333333rem;
+        height: 0.3333333333rem;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

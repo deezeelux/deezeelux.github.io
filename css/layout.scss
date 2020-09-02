@@ -32,6 +32,15 @@ body {
     overflow: hidden;
 }
 
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+
+    &::before {
+        background: url(/img/icons/points2.svg);
+    }
+}
+
 .container {
     max-width: $containerWidth;
     width: 95%;
@@ -83,4 +92,8 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+button {
+    outline: none;
 }

@@ -1,0 +1,85 @@
+.nav__item-hidden {
+    vertical-align: bottom;
+    margin-right: 2em;
+
+    @include tablet {
+        margin-right: 0;
+    }
+}
+
+.nav__item-hidden a {
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include phone {
+        font-size: 1.5rem;
+    }
+}
+
+.promo__hidden-menu {
+    background-color: #2f3234;
+    opacity: 0.99;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.promo__hidden-menu .nav__list {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    padding-top: 20%;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 80vw;
+    width: 100vw;
+
+    @include phone {
+        height: 100vw;
+    }
+}
+
+.promo__hidden-menu .nav__item a {
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.promo__hidden-menu .closebtn {
+    position: absolute;
+    top: 1.25rem;
+    right: 2.8125rem;
+    font-size: 3.75rem;
+}
+
+.promo__hidden-menu .closebtn:hover {
+    opacity: 0.5;
+    -webkit-transition: .5s;
+    transition: .5s;
+
+    @include phone {
+        font-size: 2.25rem;
+    }
+}
+
+.promo__hidden-menu .closebtn img {
+    width: 130%;
+}

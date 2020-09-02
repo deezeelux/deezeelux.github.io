@@ -1,3 +1,7 @@
+.team-title {
+    margin-bottom: 53px;
+}
+
 .team__list {
     display: flex;
     justify-content: space-between;
@@ -5,7 +9,34 @@
     @include tablet {
         flex-direction: column;
         align-items: center;
-        padding: 0 10%;
+        padding: 0 34%;
+    }
+
+    @include phone {
+        padding: 0 25%;
+    }
+}
+
+.team__version-desktop {
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.team__version-mobile {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include phone {
+        display: block;
     }
 }
 
@@ -17,6 +48,14 @@
     position: relative;
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablet {
+        margin-right: 0;
+    }
+
+    @include phone {
         margin-right: 0;
     }
 }
@@ -42,7 +81,7 @@
     transition: height .3s;
     height: 0;
 
-    &.team--version--desktop {
+    &.team__version-desktop {
         position: absolute;
         top: 100%;
     }
