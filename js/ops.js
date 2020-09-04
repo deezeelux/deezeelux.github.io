@@ -70,3 +70,13 @@ window.addEventListener('wheel', e => {
         scrollToSection('prev');
     }
 });
+
+$("[data-scroll-to]").click(e => { 
+    e.preventDefault();
+    
+    const $this = $(e.currentTarget);
+    const target = $this.attr("data-scroll-to");
+    const reqSection = $(`[data-section-id=${target}]`); 
+    
+    performTransition(reqSection.index());
+});

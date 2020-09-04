@@ -1,4 +1,4 @@
-const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
+/*const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
     fixedMenuItems = document.querySelectorAll('.fixed-menu__item'),
     sizeFixedMenuLinks = fixedMenuLinks.length;
 
@@ -10,4 +10,4 @@ for (let i = 0; i < sizeFixedMenuLinks; i++) {
         performTransition(secNum);
 
     });
-}
+}*/ 
