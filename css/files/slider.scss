@@ -20,10 +20,6 @@
 }
 
 .slider__list {
-    max-width: 51.875rem;
-    background-color: #fff;
-    position: relative;
-    background-color: transparent;
 
     @include tablet {
         max-width: 36.3125rem;
@@ -190,6 +186,10 @@
     backdrop-filter: blur(40px);
     border-radius: 4px;
     width: 365px;
+
+    &:hover {
+        position: absolute;
+    }
 }
 
 .slider__compositions-item {

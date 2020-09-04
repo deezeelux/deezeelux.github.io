@@ -1399,12 +1399,6 @@ button {
   box-shadow: none;
 }
 
-.slider__list {
-  max-width: 51.875rem;
-  background-color: #fff;
-  position: relative;
-  background-color: transparent;
-}
 @media screen and (max-width: 768px) {
   .slider__list {
     max-width: 36.3125rem;
@@ -1584,6 +1578,9 @@ button {
           backdrop-filter: blur(40px);
   border-radius: 4px;
   width: 365px;
+}
+.slider__compositions:hover {
+  position: absolute;
 }
 
 .slider__compositions-item {
